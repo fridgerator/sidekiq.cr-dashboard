@@ -37,8 +37,6 @@ COPY --from=build /usr/lib/x86_64-linux-gnu/libstdc++.so.6 /usr/lib/x86_64-linux
 COPY --from=build /usr/lib/x86_64-linux-gnu/libyaml-0.so.2 /usr/lib/x86_64-linux-gnu/libyaml-0.so.2
 COPY --from=build /app/dashboard /dashboard
 
-ENV REDIS_PROVIDER=$REDIS_HOST
-
 EXPOSE 3000
 
 ENTRYPOINT ["/dashboard"]
