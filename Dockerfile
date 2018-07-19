@@ -39,4 +39,4 @@ COPY --from=build /app/dashboard /dashboard
 
 EXPOSE 3000
 
-ENTRYPOINT ["/dashboard"]
+CMD ["/dashboard"]
