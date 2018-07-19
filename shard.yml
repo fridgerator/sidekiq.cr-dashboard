@@ -1,0 +1,17 @@
+name: sidekiq.cr-docker-dashboard
+version: 0.1.0
+
+authors:
+  - Nick Franken <shnick@gmail.com>
+
+crystal: 0.25.0
+
+dependencies:
+  sidekiq:
+    github: mperham/sidekiq.cr
+    branch: master
+  
+  kemal-basic-auth:
+    github: kemalcr/kemal-basic-auth
+
+license: MIT
